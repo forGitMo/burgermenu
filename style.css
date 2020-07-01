@@ -1,0 +1,56 @@
+.content {
+    display: flex;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 5%;
+    font-family: 'Dosis', sans-serif;
+}
+.sidebar {
+    margin: 0 auto;
+    height: 100%; 
+    width: 160px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 8em;
+    display: none;
+}
+.is-active.sidebar {
+    display: block;  
+}
+.sidebar__item {
+    list-style: none;
+    margin: 1.4em auto;
+    font-size: 1.1em;
+    color: white;
+}
+.sidebar__item:hover {
+    color: gray;
+}
+.main-content {
+    margin: 0 auto;
+    max-width: 60%;
+}
+.icon {
+    margin-left: 2em;
+    position: fixed;
+    z-index: 1;
+    height: 28px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.icon:hover {
+    transform: scale(1.1);
+}
+.icon__element {
+    
+    background-color: teal;
+    border-radius: 0.5em;
+    height: 20%;
+    width: 100%;
+    box-shadow: 0 0.001em 0.61em -0.125em;
+}
